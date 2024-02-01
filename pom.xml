@@ -3,27 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.iocoder.boot</groupId>
-    <artifactId>yudao</artifactId>
+    <groupId>org.paul</groupId>
+    <artifactId>paul-boot</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
-        <module>yudao-dependencies</module>
-        <module>yudao-framework</module>
+        <module>paul-dependencies</module>
+        <module>paul-framework</module>
         <!-- Server 主项目 -->
-        <module>yudao-server</module>
+        <module>paul-server</module>
         <!-- 各种 module 拓展 -->
-        <module>yudao-module-system</module>
-        <module>yudao-module-infra</module>
-<!--        <module>yudao-module-member</module>-->
-<!--        <module>yudao-module-bpm</module>-->
-<!--        <module>yudao-module-report</module>-->
-<!--        <module>yudao-module-mp</module>-->
-<!--        <module>yudao-module-pay</module>-->
-<!--        <module>yudao-module-mall</module>-->
-<!--        <module>yudao-module-crm</module>-->
-        <!-- 示例项目 -->
-<!--        <module>yudao-example</module>-->
+        <module>paul-module-system</module>
+        <module>paul-module-infra</module>
     </modules>
 
     <name>${project.artifactId}</name>
@@ -31,7 +22,7 @@
     <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
 
     <properties>
-        <revision>2.0.0-jdk8-snapshot</revision>
+        <revision>1.0.0</revision>
         <!-- Maven 相关 -->
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -49,8 +40,8 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-dependencies</artifactId>
+                <groupId>org.paul</groupId>
+                <artifactId>paul-dependencies</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -130,19 +121,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- 使用 huawei / aliyun 的 Maven 源，提升下载速度 -->
-    <repositories>
-        <repository>
-            <id>huaweicloud</id>
-            <name>huawei</name>
-            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
-        </repository>
-        <repository>
-            <id>aliyunmaven</id>
-            <name>aliyun</name>
-            <url>https://maven.aliyun.com/repository/public</url>
-        </repository>
-    </repositories>
 
 </project>
