@@ -1,1 +1,1 @@
-cn.iocoder.yudao.framework.websocket.config.YudaoWebSocketAutoConfiguration
+org.paul.framework.websocket.config.PaulWebSocketAutoConfiguration

@@ -1,8 +1,8 @@
-package cn.iocoder.yudao.module.system.test;
+package org.paul.module.system.test;
 
-import cn.iocoder.yudao.framework.datasource.config.YudaoDataSourceAutoConfiguration;
-import cn.iocoder.yudao.framework.mybatis.config.YudaoMybatisAutoConfiguration;
-import cn.iocoder.yudao.framework.redis.config.YudaoRedisAutoConfiguration;
+import org.paul.framework.datasource.config.YudaoDataSourceAutoConfiguration;
+import org.paul.framework.mybatis.config.YudaoMybatisAutoConfiguration;
+import org.paul.framework.redis.config.YudaoRedisAutoConfiguration;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
 import org.redisson.spring.starter.RedissonAutoConfiguration;

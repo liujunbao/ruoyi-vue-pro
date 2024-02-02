@@ -1,13 +1,13 @@
-package cn.iocoder.yudao.module.system.service.sms;
+package org.paul.module.system.service.sms;
 
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.thread.ThreadUtil;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.sms.config.YudaoSmsAutoConfiguration;
-import cn.iocoder.yudao.module.system.test.BaseDbAndRedisIntegrationTest;
-import cn.iocoder.yudao.module.system.mq.consumer.sms.SmsSendConsumer;
-import cn.iocoder.yudao.module.system.mq.producer.sms.SmsProducer;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import org.paul.framework.common.enums.UserTypeEnum;
+import org.paul.framework.sms.config.YudaoSmsAutoConfiguration;
+import org.paul.module.system.test.BaseDbAndRedisIntegrationTest;
+import org.paul.module.system.mq.consumer.sms.SmsSendConsumer;
+import org.paul.module.system.mq.producer.sms.SmsProducer;
+import org.paul.module.system.service.user.AdminUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;

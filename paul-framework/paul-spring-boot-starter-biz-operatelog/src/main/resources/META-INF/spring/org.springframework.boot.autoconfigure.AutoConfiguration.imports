@@ -1,1 +1,1 @@
-cn.iocoder.yudao.framework.operatelog.config.YudaoOperateLogAutoConfiguration
+org.paul.framework.operatelog.config.PaulOperateLogAutoConfiguration

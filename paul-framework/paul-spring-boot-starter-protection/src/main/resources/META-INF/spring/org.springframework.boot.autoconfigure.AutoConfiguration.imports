@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.idempotent.config.YudaoIdempotentConfiguration
-cn.iocoder.yudao.framework.lock4j.config.YudaoLock4jConfiguration
+org.paul.framework.idempotent.config.PaulIdempotentConfiguration
+org.paul.framework.lock4j.config.PaulLock4jConfiguration

@@ -1,3 +1,3 @@
-cn.iocoder.yudao.framework.mq.redis.config.YudaoRedisMQProducerAutoConfiguration
-cn.iocoder.yudao.framework.mq.redis.config.YudaoRedisMQConsumerAutoConfiguration
-cn.iocoder.yudao.framework.mq.rabbitmq.config.YudaoRabbitMQAutoConfiguration
+org.paul.framework.mq.redis.config.PaulRedisMQProducerAutoConfiguration
+org.paul.framework.mq.redis.config.PaulRedisMQConsumerAutoConfiguration
+org.paul.framework.mq.rabbitmq.config.PaulRabbitMQAutoConfiguration

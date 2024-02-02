@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.module.infra.service.demo;
+package org.paul.module.infra.service.demo;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -6,12 +6,12 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import javax.annotation.Resource;
 
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import org.paul.framework.test.core.ut.BaseDbUnitTest;
 
-import cn.iocoder.yudao.module.infra.controller.admin.demo.vo.*;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.InfraStudentDO;
-import cn.iocoder.yudao.module.infra.dal.mysql.demo.InfraStudentMapper;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import org.paul.module.infra.controller.admin.demo.vo.*;
+import org.paul.module.infra.dal.dataobject.demo.InfraStudentDO;
+import org.paul.module.infra.dal.mysql.demo.InfraStudentMapper;
+import org.paul.framework.common.pojo.PageResult;
 
 import javax.annotation.Resource;
 import org.springframework.context.annotation.Import;
@@ -19,12 +19,12 @@ import java.util.*;
 import java.time.LocalDateTime;
 
 import static cn.hutool.core.util.RandomUtil.*;
-import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.*;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
-import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.*;
-import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.*;
-import static cn.iocoder.yudao.framework.common.util.date.DateUtils.*;
+import static org.paul.module.infra.enums.ErrorCodeConstants.*;
+import static org.paul.framework.test.core.util.AssertUtils.*;
+import static org.paul.framework.test.core.util.RandomUtils.*;
+import static org.paul.framework.common.util.date.LocalDateTimeUtils.*;
+import static org.paul.framework.common.util.object.ObjectUtils.*;
+import static org.paul.framework.common.util.date.DateUtils.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 

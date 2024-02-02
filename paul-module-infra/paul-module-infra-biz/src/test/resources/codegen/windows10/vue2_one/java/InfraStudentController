@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.module.infra.controller.admin.demo;
+package org.paul.module.infra.controller.admin.demo;
 
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
@@ -14,20 +14,20 @@ import javax.servlet.http.*;
 import java.util.*;
 import java.io.IOException;
 
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import org.paul.framework.common.pojo.PageParam;
+import org.paul.framework.common.pojo.PageResult;
+import org.paul.framework.common.pojo.CommonResult;
+import org.paul.framework.common.util.object.BeanUtils;
+import static org.paul.framework.common.pojo.CommonResult.success;
 
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
+import util.core.org.paul.framework.excel.ExcelUtils;
 
-import cn.iocoder.yudao.framework.operatelog.core.annotations.OperateLog;
-import static cn.iocoder.yudao.framework.operatelog.core.enums.OperateTypeEnum.*;
+import org.paul.framework.operatelog.core.annotations.OperateLog;
+import static org.paul.framework.operatelog.core.enums.OperateTypeEnum.*;
 
-import cn.iocoder.yudao.module.infra.controller.admin.demo.vo.*;
-import cn.iocoder.yudao.module.infra.dal.dataobject.demo.InfraStudentDO;
-import cn.iocoder.yudao.module.infra.service.demo.InfraStudentService;
+import org.paul.module.infra.controller.admin.demo.vo.*;
+import org.paul.module.infra.dal.dataobject.demo.InfraStudentDO;
+import org.paul.module.infra.service.demo.InfraStudentService;
 
 @Tag(name = "管理后台 - 学生")
 @RestController

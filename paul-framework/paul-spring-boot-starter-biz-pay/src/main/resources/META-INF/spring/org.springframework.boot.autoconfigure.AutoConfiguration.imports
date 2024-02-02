@@ -1,1 +1,1 @@
-cn.iocoder.yudao.framework.pay.config.YudaoPayAutoConfiguration
+org.paul.framework.pay.config.PaulPayAutoConfiguration

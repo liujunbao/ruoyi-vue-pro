@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration
-cn.iocoder.yudao.framework.datapermission.config.YudaoDeptDataPermissionAutoConfiguration
+org.paul.framework.datapermission.config.PaulDataPermissionAutoConfiguration
+org.paul.framework.datapermission.config.PaulDeptDataPermissionAutoConfiguration

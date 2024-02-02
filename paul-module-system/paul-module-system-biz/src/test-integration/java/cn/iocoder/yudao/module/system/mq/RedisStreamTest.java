@@ -1,12 +1,12 @@
-package cn.iocoder.yudao.module.system.mq;
+package org.paul.module.system.mq;
 
 import cn.hutool.core.thread.ThreadUtil;
-import cn.iocoder.yudao.framework.mq.core.RedisMQTemplate;
-import cn.iocoder.yudao.module.system.mq.consumer.mail.MailSendConsumer;
-import cn.iocoder.yudao.module.system.mq.consumer.sms.SmsSendConsumer;
-import cn.iocoder.yudao.module.system.mq.message.mail.MailSendMessage;
-import cn.iocoder.yudao.module.system.mq.message.sms.SmsSendMessage;
-import cn.iocoder.yudao.module.system.test.BaseRedisIntegrationTest;
+import org.paul.framework.mq.core.RedisMQTemplate;
+import org.paul.module.system.mq.consumer.mail.MailSendConsumer;
+import org.paul.module.system.mq.consumer.sms.SmsSendConsumer;
+import org.paul.module.system.mq.message.mail.MailSendMessage;
+import org.paul.module.system.mq.message.sms.SmsSendMessage;
+import org.paul.module.system.test.BaseRedisIntegrationTest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;

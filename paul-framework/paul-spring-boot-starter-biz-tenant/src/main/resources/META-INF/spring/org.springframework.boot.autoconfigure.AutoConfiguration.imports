@@ -1,1 +1,1 @@
-cn.iocoder.yudao.framework.tenant.config.YudaoTenantAutoConfiguration
+org.paul.framework.tenant.config.PaulTenantAutoConfiguration

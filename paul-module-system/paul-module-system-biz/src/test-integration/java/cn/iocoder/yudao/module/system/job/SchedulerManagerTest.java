@@ -1,9 +1,9 @@
-package cn.iocoder.yudao.module.system.job;
+package org.paul.module.system.job;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.quartz.core.scheduler.SchedulerManager;
-import cn.iocoder.yudao.module.system.job.auth.UserSessionTimeoutJob;
-import cn.iocoder.yudao.module.system.test.BaseDbUnitTest;
+import org.paul.framework.quartz.core.scheduler.SchedulerManager;
+import org.paul.module.system.job.auth.UserSessionTimeoutJob;
+import org.paul.module.system.test.BaseDbUnitTest;
 import org.junit.jupiter.api.Test;
 import org.quartz.SchedulerException;
 
