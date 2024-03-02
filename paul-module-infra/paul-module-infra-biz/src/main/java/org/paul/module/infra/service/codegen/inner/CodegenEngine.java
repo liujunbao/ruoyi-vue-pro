@@ -8,6 +8,11 @@ import cn.hutool.extra.template.TemplateConfig;
 import cn.hutool.extra.template.TemplateEngine;
 import cn.hutool.extra.template.engine.velocity.VelocityEngine;
 import cn.hutool.system.SystemUtil;
+import com.google.common.annotations.VisibleForTesting;
+import com.google.common.collect.ImmutableTable;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Table;
+import lombok.Setter;
 import org.paul.framework.common.exception.util.ServiceExceptionUtil;
 import org.paul.framework.common.pojo.CommonResult;
 import org.paul.framework.common.pojo.PageParam;
@@ -32,11 +37,6 @@ import org.paul.module.infra.enums.codegen.CodegenFrontTypeEnum;
 import org.paul.module.infra.enums.codegen.CodegenSceneEnum;
 import org.paul.module.infra.enums.codegen.CodegenTemplateTypeEnum;
 import org.paul.module.infra.framework.codegen.config.CodegenProperties;
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.collect.ImmutableTable;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Table;
-import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -466,14 +466,14 @@ public class CodegenEngine {
     }
 
     private static String javaModuleFilePath(String path, String module, String src) {
-        return "yudao-module-${table.moduleName}/" + // 顶级模块
-                "yudao-module-${table.moduleName}-" + module + "/" + // 子模块
+        return "pual-module-${table.moduleName}/" + // 顶级模块
+                "pual-module-${table.moduleName}-" + module + "/" + // 子模块
                 "src/" + src + "/java/${basePackage}/module/${table.moduleName}/" + path + ".java";
     }
 
     private static String mapperXmlFilePath() {
-        return "yudao-module-${table.moduleName}/" + // 顶级模块
-                "yudao-module-${table.moduleName}-biz/" + // 子模块
+        return "pual-module-${table.moduleName}/" + // 顶级模块
+                "pual-module-${table.moduleName}-biz/" + // 子模块
                 "src/main/resources/mapper/${table.businessName}/${table.className}Mapper.xml";
     }
 
@@ -482,7 +482,7 @@ public class CodegenEngine {
     }
 
     private static String vueFilePath(String path) {
-        return "yudao-ui-${sceneEnum.basePackage}-vue2/" + // 顶级目录
+        return "paul-ui-${sceneEnum.basePackage}-vue2/" + // 顶级目录
                 "src/" + path;
     }
 
@@ -491,7 +491,7 @@ public class CodegenEngine {
     }
 
     private static String vue3FilePath(String path) {
-        return "yudao-ui-${sceneEnum.basePackage}-vue3/" + // 顶级目录
+        return "paul-ui-${sceneEnum.basePackage}-vue3/" + // 顶级目录
                 "src/" + path;
     }
 
